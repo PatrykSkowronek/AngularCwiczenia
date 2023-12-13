@@ -1,0 +1,68 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-head {
+    margin: 20px;
+    text-align: center;
+}
+
+.container-main {
+    justify-content: center;
+    display: flex;
+}
+
+.container-burger {
+    margin: 5px;
+    width: 500px;
+    background-color: wheat;
+    padding: 30px;
+    text-align: center;
+}
+
+.container-options {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    background-color: coral;
+    width: 500px;
+    padding: 30px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.container-ingredients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-options input {
+    width: 350px;
+    margin-bottom: 5px;
+}
+
+img {
+    width: 200px;
+    height: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.bun {
+    width: 200px;
+    height: 40px;
+}
+
+#title {
+    color: crimson;
+}
+
+.inputNtext {
+    border-color: #ad3c03;
+    border-radius: 5px;
+    border-width: 3px;
+    background-color: #ff9863;
+    font-weight: bold;
+    color: #4a1a01;
+}

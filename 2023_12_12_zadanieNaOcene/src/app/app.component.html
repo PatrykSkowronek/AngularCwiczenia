@@ -1,0 +1,39 @@
+<div class="container-head">
+  <h1 id="title">Pixel Burgers</h1>
+  <br> <br>
+  <h3>Stwórz własnegu pixelowego burgiera:</h3>
+  <p style="font-size: 8px;">By Patryk Skowronek</p>
+</div>
+
+<div class="container-main">
+  <div class="container-burger">
+    <img class="bun" src="./assets/topBun.png">
+    <div class="container-ingredients">
+      <img *ngFor="let veggie of veggiesArray" src="./assets/veggies.png">
+      <img *ngFor="let onion of onionArray" src="./assets/onion.png">
+      <img *ngFor="let cheese of cheeseArray" src="./assets/cheese.png">
+      <img *ngFor="let bacon of baconArray" src="./assets/bacon.png">
+      <img *ngFor="let beef of beefArray" src="./assets/beef.png">
+    </div>
+    <img class="bun" src="./assets/bottomBun.png">
+    <br> <br>
+    <h3>{{burgerCostText}}</h3>
+  </div>
+  
+  <div class="container-options">
+      Warzywa:
+      <input class="inputNtext" [(ngModel)]="veggiesAmount" type="number" min="0" max="7">
+      Cebula:
+      <input class="inputNtext" [(ngModel)]="onionAmount" type="number" min="0" max="7">
+      Ser:
+      <input class="inputNtext" [(ngModel)]="cheeseAmount" type="number" min="0" max="7">
+      Bekon:
+      <input class="inputNtext" [(ngModel)]="baconAmount" type="number" min="0" max="7">
+      Wołowina:
+      <input class="inputNtext" [(ngModel)]="beefAmount" type="number" min="0" max="7">
+      <br>
+      <p *ngIf="moreThanSeven" style="color: red;">Za dużo składników, możesz wybrać maksymalnie 7!</p>
+      <br>
+      <button class="inputNtext" (click)="changeIngredients()">Zmień składniki</button>
+    </div>
+</div>
