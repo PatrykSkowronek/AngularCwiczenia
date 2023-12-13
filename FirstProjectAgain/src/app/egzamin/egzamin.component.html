@@ -1,0 +1,9 @@
+<h1>Lista kursów</h1>
+<ul>
+    <li *ngFor="let kurs of kursy">{{kurs}}</li>
+</ul>
+Imię i Nazwisko: <br>
+<input [(ngModel)]="dane" type="text"> <br>
+Numer kursu: <br>
+<input [(ngModel)]="numer" type="number"> <br>
+<button (click)="zapisz()">Zapisz do kursu</button>
